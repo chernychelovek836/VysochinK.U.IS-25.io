@@ -1,0 +1,56 @@
+/* css/text.css */
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    font-size: 1em;
+    font-family:helvetica;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: normal;
+    font-family:helvetica;
+}
+
+h2 {
+    font-size: 2.2em;
+    margin-bottom: 0.4em;
+    font-family:helvetica;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin: 1em 0 0.5em;
+    color: #222;
+    font-family:helvetica;
+}
+p {
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    font-family:helvetica;
+}
+
+.logo-block p {
+    color: #666;
+}
+
+.info {
+    color: #2aa6d6;
+    font-size: 0.9em;
+    font-family:helvetica;
+}
+
+.sidebar a {
+    color: #2aa6d6;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    font-size: 0.9em;
+    font-family:helvetica;
+}
