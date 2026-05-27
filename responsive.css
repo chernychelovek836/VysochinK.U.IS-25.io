@@ -1,0 +1,144 @@
+/* responsive.css - адаптация для мобильных устройств */
+
+/* Планшеты и маленькие ноутбуки (ширина меньше 1024px) */
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        width: 90%;
+        min-width: auto; /* Убираем фиксированную минимальную ширину */
+    }
+    
+    .content {
+        width: 60%; /* Немного сжимаем контент */
+    }
+    
+    .sidebar {
+        margin-left: 63%; /* Пересчитываем отступ */
+    }
+}
+
+/* Мобильные устройства (ширина меньше 768px) */
+@media screen and (max-width: 768px) {
+    
+    /* Убираем фиксированную ширину body */
+    body {
+        min-width: auto;
+        font-size: 0.9em; /* Чуть уменьшаем шрифт на мобильных */
+    }
+    
+    .wrapper {
+        width: 95%;
+        min-width: auto;
+    }
+    
+    /* Перестраиваем шапку в колонку */
+    .header {
+        text-align: center;
+    }
+    
+    .logo-block {
+        float: none;
+        margin-bottom: 1em;
+    }
+    
+    .menu {
+        float: none;
+        margin-top: 0;
+    }
+    
+    .menu li {
+        display: inline-block;
+        margin: 0 0.2em;
+    }
+    
+    .menu a {
+        padding: 0.5em 0.8em;
+        font-size: 0.8em;
+    }
+    
+    /* Превращаем две колонки в одну */
+    .content {
+        float: none;
+        width: 100%;
+    }
+    
+    .sidebar {
+        margin-left: 0;
+        margin-top: 2em;
+        width: 100%;
+    }
+    
+    /* Адаптируем баннер */
+    .banner img {
+        width: 100%;
+        height: auto;
+    }
+    
+    /* Все изображения адаптивны */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Футер в колонку */
+    .footer-left,
+    .footer-right {
+        float: none;
+        text-align: center;
+        margin: 0.5em 0;
+    }
+    
+    /* Заголовки поменьше */
+    h1 {
+        font-size: 2.2em;
+    }
+    
+    h2 {
+        font-size: 1.8em;
+    }
+    
+    h3 {
+        font-size: 1.1em;
+    }
+    
+    /* Форма поиска растягивается */
+    .search-form input {
+        width: 60%;
+    }
+    
+    /* Уменьшаем отступы */
+    .footer {
+        padding: 1em 5%;
+    }
+}
+
+/* Очень маленькие телефоны (ширина меньше 480px) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 0.85em;
+    }
+    
+    .menu li {
+        display: block; /* Меню вертикально */
+        margin: 0.2em 0;
+    }
+    
+    .menu a {
+        display: block;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    .search-form input {
+        width: 70%;
+    }
+    
+    .search-form button {
+        margin-top: 0.5em;
+    }
+}
